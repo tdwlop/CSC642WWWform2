@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [12.x]
 
     steps:
       - name: Checkout
@@ -24,4 +24,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: build
+          folder: cscwwwform/build
