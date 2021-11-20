@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
-import { BrowserRouter as Router} from 'react-router-dom';
-import { Switch, Route } from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
+
 import Twform from './components/FForm';
 import FResults from './components/FResults';
 import Container from 'react-bootstrap/Container';
