@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+.container{
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+Form{
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+}
+
+#bigdiv{
+  margin: 0 auto;
+  width:fit-content;
+  background-color: #F0D9FF;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid #BFA2DB;
+}
+body{
+  text-align: center;
+  background-color: #F3F1F5;
+}
+#tform{
+ display: inline-block;
+  width:fit-content;
+  
+}
+#linehere{
+  border:2px solid #000303;
+}
+.linehere{
+  border-bottom:2px solid #7F7C82;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.form-label{
+  font-weight: bold;
+  display:inline-flex;
+}
+.form-control{
+  border: 2px solid black;
+}
+.input{
+  border: 2px solid #000;
+}
+h3{
+  color: red;
+  font-weight: bold;
+}
+#buttonrow{
+  margin-top:20px;
+}
+#needinline{
+  display: inline-block;
+}
+#cbox, #tbox, #sbox{
+  display: inline-block;
+}
+.alert{
+  margin-top: 10px;
+}
+
