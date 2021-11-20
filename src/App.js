@@ -12,7 +12,7 @@ function App() {
       <div id="bigdiv2">
         <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="">
             <Twform />
           </Route>
           <Route exact path="/FResults">
