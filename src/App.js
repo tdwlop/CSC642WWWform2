@@ -15,7 +15,7 @@ function App() {
           <Route exact path="">
             <Twform />
           </Route>
-          <Route exact path="/FResults">
+          <Route exact path="#/FResults">
             <FResults />
           </Route>
         </Switch>
