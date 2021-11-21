@@ -143,7 +143,9 @@ function getLongLat(st){
     .then(res => res.json())
     .then(resjson => {latlongarr = resjson;
     localStorage.long = latlongarr.resourceSets[0].resources[0].point.coordinates[1];
-    localStorage.lat = latlongarr.resourceSets[0].resources[0].point.coordinates[0];})
+    localStorage.lat = latlongarr.resourceSets[0].resources[0].point.coordinates[0];
+    console.log(localStorage.long);
+    console.log(resjson);})
     ;
     }
     console.log(latlongarr);

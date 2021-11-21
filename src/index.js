@@ -47,4 +47,7 @@ ReactDOM.render(
 //https://www.youtube.com/watch?v=5I37iVCDUTU
 //https://docs.microsoft.com/en-us/bingmaps/rest-services/imagery/get-a-static-map
 //https://stackoverflow.com/questions/16812039/how-to-check-valid-email-format-entered-in-edittext#:~:text=You%20can%20use%20regular%20expression%20%28Regex%29%20to%20check,message%20if%20not%20matches%20with%20email%20pattern%20%7D
+//https://medium.com/swlh/using-react-router-on-github-pages-2702afdd5d0c
+//https://github.com/facebook/create-react-app/issues/1765
+//https://github.com/fisshy/react-scroll/issues/445
 reportWebVitals();

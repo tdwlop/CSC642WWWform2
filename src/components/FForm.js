@@ -393,7 +393,7 @@ function Twform() {
 
           </Col>
         </Form></div>
-        {goti  && <div >
+        {goti  && localStorage.long && <div >
 
 <div className="col-md-12 d-flex justify-content-center">
   <h4>Results verification page Vivian Kuang</h4>
