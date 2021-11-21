@@ -139,7 +139,7 @@ function getLongLat(st){
     let starr = st.split(/[ ,]+/);
     console.log(starr);
     if(starr.length === 3){
-        fetch(`http://dev.virtualearth.net/REST/v1/Locations/US/${localStorage.sa}/${localStorage.zc}/${localStorage.ct}/${starr[0]}%20${starr[1]}%20${starr[2]}?key=AjLO9XD7SI7kT5yhQ1tbmi2fGDB1tnz5OBD4Mx0f0oQPXy9Oz3reskGgLrmKS7Jm`)
+        fetch(`https://dev.virtualearth.net/REST/v1/Locations/US/${localStorage.sa}/${localStorage.zc}/${localStorage.ct}/${starr[0]}%20${starr[1]}%20${starr[2]}?key=AjLO9XD7SI7kT5yhQ1tbmi2fGDB1tnz5OBD4Mx0f0oQPXy9Oz3reskGgLrmKS7Jm`)
     .then(res => res.json())
     .then(resjson => {latlongarr = resjson;
     localStorage.long = latlongarr.resourceSets[0].resources[0].point.coordinates[1];
