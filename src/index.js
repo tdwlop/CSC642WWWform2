@@ -50,4 +50,5 @@ ReactDOM.render(
 //https://medium.com/swlh/using-react-router-on-github-pages-2702afdd5d0c
 //https://github.com/facebook/create-react-app/issues/1765
 //https://github.com/fisshy/react-scroll/issues/445
+//https://javascript.info/async-await
 reportWebVitals();

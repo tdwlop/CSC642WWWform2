@@ -7,8 +7,9 @@ import { useState, useRef } from 'react';
 import '../App.css';
 import { getInput } from './FProcess';
 import './FResults';
-import { Redirect } from 'react-router-dom';
+//import { Redirect } from 'react-router-dom';
 import { delInput } from './FProcess';
+
 
 function Twform() {
   const [validated, setValidated] = useState(false);
@@ -44,22 +45,25 @@ function Twform() {
 
 
 
-  const handleSubmit = (event) => {
-
-    let y = captchaRef.current.execute();
+   const handleSubmit =  (event) => {
+   
+    //let y = 
     console.log("Does captcha excute return anything?");
-    console.log(y);
+    //console.log(y);
     
     const form = event.currentTarget;
     console.log("what is the value of token");
     console.log(token);
     event.preventDefault();
+    console.log(form.checkValidity());
+    
     if (form.checkValidity() === false) {
       console.log("in the checkvalidity of the if statement");
       event.preventDefault();
       event.stopPropagation();
 
     } else {
+      docaptcha();
       console.log("b4 the set true to the handle submit");
       setValidated(true);
       let y = dothis();
@@ -67,11 +71,18 @@ function Twform() {
         event.preventDefault();
       }
     }
-
+  
 
 
   };
+  async function docaptcha(){
+
+    if(token === null){
+      await captchaRef.current.execute();
+  }
+  }
   function dothis() {
+
     if (validated && token !== null) {
       let x = getInput(fn, ln, ti, ft, ih, po, st, ct, sa, zc, se, sp, sf, sw, sm, sv, mb, em, tos);
       console.log("after the getinput");
@@ -392,6 +403,8 @@ function Twform() {
             </Row>
 
           </Col>
+          {goti && 
+          <div class="alert alert-warning alert-dismissible fade show col-auto" role="alert"><strong>Form Submmited. Please scroll down </strong></div>}
         </Form></div>
         {goti  && localStorage.long && <div >
 
@@ -449,7 +462,7 @@ function Twform() {
         <h5>{localStorage.tos}   I agree to terms</h5>
       </div>
       <Row className="justify-content-center" id="buttonrow">
-      <Button type="submit" onClick={handleSubmit}>Confirm</Button>
+      <Button type="submit" onClick={delInput}>Confirm</Button>
       </Row>
     </Col>
   </Form></div>
